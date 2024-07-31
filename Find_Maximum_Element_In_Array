@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int arr1[] = {10,20,100,40,50,500,8};
+    int n = sizeof(arr1)/sizeof(arr1[0]);
+    int result = arr1[0];
+    int i;
+    for(i=1;i<n;i++)
+    {
+        if(result<arr1[i])
+        {
+            result=arr1[i];
+        }
+    }
+    cout<<result<<endl;
+}
